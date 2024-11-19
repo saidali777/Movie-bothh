@@ -75,7 +75,7 @@ COMMAND_HAND_LER = environ.get("COMMAND_HAND_LER", "/")
 
 # MongoDB information
 DATABASE_URI = environ.get('DATABASE_URI', "")
-DATABASE_NAME = environ.get('DATABASE_NAME', "Elsa")
+DATABASE_NAME = environ.get('DATABASE_NAME', "Bot")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 MONGO_URL = os.environ.get('MONGO_URL', "")
 
@@ -111,15 +111,15 @@ SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 PORT = os.environ.get("PORT", "8080")
 MAX_BTN = int(environ.get('MAX_BTN', "7"))
-S_GROUP = environ.get('S_GROUP',"t.me/CinemaSocket1")
-MAIN_CHANNEL = environ.get('MAIN_CHANNEL',"https://t.me/+fqeHQRvmdz8zYzll")
-MOVIE_GROUP = environ.get('MOVIE_GROUP',"t.me/CinemaSocket01")
+S_GROUP = environ.get('S_GROUP',"https://t.me/+Pq_DML2QZIJmZGU1")
+MAIN_CHANNEL = environ.get('MAIN_CHANNEL',"https://t.me/+Pq_DML2QZIJmZGU1")
+MOVIE_GROUP = environ.get('MOVIE_GROUP',"https://t.me/+Pq_DML2QZIJmZGU1")
 #Must change this link to work redirect (FILE_FORWORD)
-FILE_FORWARD = environ.get('FILE_FORWARD',"https://t.me/+1dbVg9pA2GphZmI1")
+FILE_FORWARD = environ.get('FILE_FORWARD',"https://t.me/+Pq_DML2QZIJmZGU1")
 MSG_ALRT = environ.get('MSG_ALRT', '𝑪𝑯𝑬𝑪𝑲 & 𝑻𝑹𝒀 𝑨𝑳𝑳 𝑴𝒀 𝑭𝑬𝑨𝑻𝑼𝑹𝑬𝑺')
 FILE_CHANNEL = int(environ.get('FILE_CHANNEL', 0))
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', 0))
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'Elsasupportgp')
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'botsupportgp')
 AUTO_DELETE = is_enabled((environ.get('AUTO_DELETE', "True")), True)
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = is_enabled((environ.get('IMDB', "True")), True)
@@ -145,3 +145,4 @@ LOG_STR += ("Long IMDB storyline enabled." if LONG_IMDB_DESCRIPTION else "LONG_I
 LOG_STR += ("Spell Check Mode Is Enabled, bot will be suggesting related movies if movie not found\n" if SPELL_CHECK_REPLY else "SPELL_CHECK_REPLY Mode disabled\n")
 LOG_STR += (f"MAX_LIST_ELM Found, long list will be shortened to first {MAX_LIST_ELM} elements\n" if MAX_LIST_ELM else "Full List of casts and crew will be shown in imdb template, restrict them by adding a value to MAX_LIST_ELM\n")
 LOG_STR += f"Your current IMDB template is {IMDB_TEMPLATE}"
+
